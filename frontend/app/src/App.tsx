@@ -29,16 +29,9 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="p-3">
       <AppView></AppView>
-      <div>App</div>
-      <input
-        type="text"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        placeholder="Enter value"
-      />
-      <button onClick={handleSubmit}>send</button>
+
     </div>
   );
 }

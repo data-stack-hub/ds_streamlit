@@ -1,10 +1,11 @@
-import React from 'react'
+import { Input as UIInput } from "@/components/ui/input"
 
 type Props = {}
 
-const Input = (props: Props) => {
+const Input = (props: any) => {
+    const { data } = props
     return (
-        <input />
+        <UIInput />
 
     )
 }
