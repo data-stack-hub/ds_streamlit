@@ -2,9 +2,9 @@ from datastack.runtime.runtime import Runtime
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import socketio
+import socketio, os
 
-
+import json
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -21,7 +21,12 @@ _runtime = Runtime()
 def connect(sid, environ):
     print('connect ', sid)
     print('new session connected, id:', _runtime.connect_session('', sid))
-    sio.emit('msg', 'msg from py server')
+    import json
+    def read_json(file_name):
+        with open(os.path.join(os.getcwd(), 'datastack\server',file_name), 'r') as file:
+            return json.load(file)
+    print(read_json('write.json'))
+    sio.emit('msg', read_json('write.json'))
 
 @sio.on('disconnect')
 def disconnect(sid):

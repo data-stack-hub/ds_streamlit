@@ -6,6 +6,8 @@ function App() {
   const [inputValue, setInputValue] = useState("");
   const [connectionManager, setConnectionManager] = useState(null);
 
+  const [elements, setElements] = useState([])
+
   useEffect(() => {
     const manager = new ConnectionManager({
       onMessage: handleMessage
@@ -21,6 +23,7 @@ function App() {
   const handleMessage = (msg) => {
     // distribute message based on message type
     console.log(msg);
+    setElements((prevMessages) => [...prevMessages, msg]);
   };
 
   const handleSubmit = () => {
@@ -30,7 +33,7 @@ function App() {
 
   return (
     <div className="p-3">
-      <AppView></AppView>
+      <AppView elements={elements}></AppView>
 
     </div>
   );

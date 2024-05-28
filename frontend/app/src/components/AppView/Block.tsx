@@ -13,7 +13,7 @@ const Block = (props) => {
 
 
     useEffect(() => {
-        setElements(props.elements)
+        setElements({ data: props.elements })
         console.log(elements)
     }, [props.elements])
 

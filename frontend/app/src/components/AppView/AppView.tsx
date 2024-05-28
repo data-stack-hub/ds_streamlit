@@ -3,7 +3,9 @@ import Block from './Block'
 
 type Props = {}
 
-const AppView = (props: Props) => {
+const AppView = (props: any) => {
+
+    const { elements } = props
 
     const columns = [
         {
@@ -142,7 +144,7 @@ const AppView = (props: Props) => {
             ]
         }
     ]
-    const elements: any = {
+    const elements_test: any = {
         data: [...[
             {
                 "type": "header",
@@ -152,6 +154,8 @@ const AppView = (props: Props) => {
         ], ...columns, ...select, ...input, ...button, ...raio_button, ...tabs]
     }
     const renderBlock = () => (
+
+
         <Block elements={elements}></Block>
     )
     return (
