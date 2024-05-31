@@ -13,8 +13,8 @@ const Block = (props) => {
 
 
     useEffect(() => {
-        setElements({ data: props.elements })
-        console.log(elements)
+        console.log(props.elements)
+        setElements(props.elements)
     }, [props.elements])
 
     const BlockNodeRenderer = (props) => {
@@ -63,8 +63,8 @@ const Block = (props) => {
 
     return (
         <>
-            {elements.data.map((node: any, index) => {
-                console.log(node.type)
+            {elements?.data?.map((node: any, index) => {
+
                 if (node.group != 'layout') {
                     return <ElementNodeRenderer {...{ element: node }}></ElementNodeRenderer>
                 }

@@ -1,0 +1,22 @@
+[
+    {
+        "type": "subheader",
+        "group": "element",
+        "data": "Radio button"
+    },
+    {
+        "type": "card",
+        "group": "layout",
+        "data": [
+            {
+                "type": "radio_button",
+                "group": "element",
+                "data": [
+                    "Default",
+                    "Comfortable",
+                    "Compact"
+                ]
+            }
+        ]
+    }
+]

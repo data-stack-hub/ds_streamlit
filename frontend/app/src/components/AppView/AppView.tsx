@@ -6,6 +6,7 @@ type Props = {}
 const AppView = (props: any) => {
 
     const { elements } = props
+    console.log(elements)
 
     const columns = [
         {

@@ -6,7 +6,7 @@ function App() {
   const [inputValue, setInputValue] = useState("");
   const [connectionManager, setConnectionManager] = useState(null);
 
-  const [elements, setElements] = useState([])
+  const [elements, setElements] = useState({})
 
   useEffect(() => {
     const manager = new ConnectionManager({
@@ -22,9 +22,15 @@ function App() {
 
   const handleMessage = (msg) => {
     // distribute message based on message type
-    console.log(msg);
-    setElements((prevMessages) => [...prevMessages, msg]);
-  };
+    // const newData = [...msg];
+    console.log(JSON.stringify(msg))
+    setElements(msg);
+  }
+
+  useEffect(() => {
+    console.log("Elements state has been updated:", elements);
+  }, [elements]); // Dependency array includes `elements` to log whenever it changes
+
 
   const handleSubmit = () => {
     console.log('sending value to backend ', inputValue)

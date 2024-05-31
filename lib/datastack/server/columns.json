@@ -1,0 +1,41 @@
+[
+    {
+        "type": "subheader",
+        "group": "element",
+        "data": "columns"
+    },
+    {
+        "type": "column",
+        "group": "layout",
+        "data": [
+            {
+                "type": "card",
+                "group": "layout",
+                "data": [
+                    {
+                        "type": "text",
+                        "data": "text inside column1"
+                    },
+                    {
+                        "type": "text",
+                        "data": "text inside column12"
+                    }
+                ]
+            },
+            {
+                "type": "card",
+                "group": "layout",
+                "data": [
+                    {
+                        "type": "text",
+                        "data": "text inside column1"
+                    },
+                    {
+                        "type": "text",
+                        "data": "text inside column12"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "type": "subheader",
+        "group": "element",
+        "data": "Tabs"
+    },
+    {
+        "type": "card",
+        "group": "layout",
+        "data": [
+            {
+                "type": "tabs",
+                "group": "layout",
+                "data": [
+                    "Account",
+                    "Password",
+                    "tes1",
+                    "test2",
+                    "test3s"
+                ]
+            }
+        ]
+    }
+]

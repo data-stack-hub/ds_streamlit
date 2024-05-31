@@ -1,5 +1,7 @@
-{
-    "type": "text",
-    "group": "element",
-    "data": "Demo app from py"
-}
+[
+    {
+        "type": "subheader",
+        "group": "element",
+        "data": "Demo App"
+    }
+]

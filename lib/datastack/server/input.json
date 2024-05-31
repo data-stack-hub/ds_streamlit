@@ -1,0 +1,18 @@
+[
+    {
+        "type": "subheader",
+        "group": "element",
+        "data": "Input"
+    },
+    {
+        "type": "card",
+        "group": "layout",
+        "data": [
+            {
+                "type": "input",
+                "group": "element",
+                "data": "input"
+            }
+        ]
+    }
+]

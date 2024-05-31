@@ -1,0 +1,27 @@
+[
+    {
+        "type": "subheader",
+        "group": "element",
+        "data": "Select"
+    },
+    {
+        "type": "column",
+        "group": "layout",
+        "data": [
+            {
+                "type": "card",
+                "group": "layout",
+                "data": [
+                    {
+                        "type": "select",
+                        "group": "element",
+                        "data": [
+                            "a",
+                            "b"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
